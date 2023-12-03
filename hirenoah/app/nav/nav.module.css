@@ -1,0 +1,15 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 48px;
+  padding: 0 16px; /* Add padding for better spacing */
+}
+
+.top Text:first-child {
+  margin-right: 711px; /* Set the width between NK. and Projects */
+}
+
+.top Text:not(:first-child) {
+  margin-left: 32px; /* Add 32px gap between Projects, Resume, and Contact */
+}

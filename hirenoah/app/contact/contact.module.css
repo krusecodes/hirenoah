@@ -1,0 +1,18 @@
+/* contact.module.css */
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 16px; /* Add margin as needed */
+}
+
+/* Add any additional styles for your buttons */
+.buttons Button {
+  /* Add specific styles for each button */
+  /* For example, you can set a specific width, height, or other styles */
+  margin: 0; /* Reset default margin to ensure even spacing */
+}
+
+.button {
+  width: 120px;
+}
