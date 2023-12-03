@@ -1,7 +1,33 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh; /* Adjust as needed */
+}
+
 .card {
   width: 500px;
+  /* Add other styling for your card */
+}
+
+@media screen and (max-width: 720px) {
+  .card {
+    width: 300px;
+  }
 }
 
 .projectTitle {
   margin-bottom: 52px !important;
+}
+
+.cardSpace {
+  /* This class needs to be applied to a flex container, not directly to a card */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.projectsHeader {
+  display: flex;
+  justify-content: space-between;
 }

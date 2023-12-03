@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-evenly;
   margin-top: 16px; /* Add margin as needed */
+  align-items: start;
 }
 
 /* Add any additional styles for your buttons */
@@ -14,5 +15,22 @@
 }
 
 .button {
-  width: 120px;
+  width: 240px;
+}
+
+.footerContainer {
+  margin-top: 100px !important;
+  margin-bottom: 120px;
+}
+
+/* Media query for screens less than 700px */
+@media screen and (max-width: 1200px) {
+  .buttons {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .buttons Button {
+    margin-top: 8px; /* Add spacing between stacked buttons */
+  }
 }

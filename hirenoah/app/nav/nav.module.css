@@ -7,9 +7,13 @@
 }
 
 .top Text:first-child {
-  margin-right: 711px; /* Set the width between NK. and Projects */
+  margin-right: 711px; 
 }
 
 .top Text:not(:first-child) {
-  margin-left: 32px; /* Add 32px gap between Projects, Resume, and Contact */
+  margin-left: 32px;
+}
+
+.link {
+  color: black !important;
 }

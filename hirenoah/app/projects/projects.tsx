@@ -1,22 +1,53 @@
 "use client"
 
-import { Space, Typography } from 'antd';
+import { Space, Typography, Radio, RadioChangeEvent } from 'antd';
 
-import { projects } from './projectData'
+import { engProjectData } from './engProjectData'
+import { designProjectData } from './designProjectData'
 import Project from './project';
+import DesignProject from './designProject';
 
 import styles from "./project.module.css"
+import { useState } from 'react';
 
 const { Title } = Typography;
 
 export default function Projects() {
+  const [displayDesignProjects, setDisplayDesignProjects] = useState<boolean>(false);
+  const [displayEngProjects, setDisplayEngProjects] = useState<boolean>(true);
+
+  const onChange = (e: RadioChangeEvent) => {
+    console.log(`radio checked:${e.target.value}`);
+    if (e.target.value === 'design') {
+      setDisplayDesignProjects(true)
+      setDisplayEngProjects(false)
+    } else if (e.target.value === 'eng') {
+      setDisplayDesignProjects(false)
+      setDisplayEngProjects(true)
+    }
+  };
+
+
   return (
     <>
+    <div className={styles.projectsHeader}>
       <Title level={4} className={styles.projectTitle}>Featured Projects</Title>
-      <Space direction="horizontal" wrap size="large">
-        {projects.map((project) => (
-          <Project key={project.id} {...project} />
-        ))}
+      <Radio.Group onChange={onChange} defaultValue="eng" buttonStyle="solid">
+      <Radio.Button value="eng">Engineering Projects</Radio.Button>
+      <Radio.Button value="design">Design Projects</Radio.Button>
+    </Radio.Group>
+    </div>
+      <Space direction="horizontal" wrap size="large" className={styles.cardSpace}>
+        {displayEngProjects && (
+          engProjectData.map((engProject: any) => (
+            <Project key={engProject.id} {...engProject} />
+          ))
+        )}
+        {displayDesignProjects && (
+          designProjectData.map((designProject: any) => (
+            <Project key={designProject.id} {...designProject} />
+          ))
+        )}
       </Space>
     </>
   );

@@ -8,14 +8,16 @@ const { Text } = Typography
 
 export default function Contact() {
   return (
-    <div>
+    <>
       <Divider />
-      <div className={styles.buttons}>
-      <Text>Contact</Text>
-        <Button className={styles.button}>Send an Email</Button>
-        <Button className={styles.button}>Linkedin</Button>
-        <Button className={styles.button}>Github</Button>
+      <div className={styles.footerContainer}>
+        <div className={styles.buttons}>
+          <Text>Contact</Text>
+          <Button className={styles.button}>Send an Email</Button>
+          <Button className={styles.button}>Linkedin</Button>
+          <Button className={styles.button}>Github</Button>
+        </div>
       </div>
-    </div>
+    </>
   )
 }

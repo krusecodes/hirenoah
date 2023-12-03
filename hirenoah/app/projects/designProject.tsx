@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, Image, Space, Typography } from 'antd';
+import { Card, Image, Typography } from 'antd';
 
 
 import styles from './project.module.css'
@@ -9,14 +9,14 @@ import styles from './project.module.css'
 const { Paragraph, Link } = Typography;
 
 
-interface ProjectProps {
+interface DesignProjectProps {
   imageSrc: string;
   title: string;
   description: string;
   stack: string;
 }
 
-const Project: React.FC<ProjectProps> = ({ imageSrc, title, description, stack }) => {
+const DesignProject: React.FC<DesignProjectProps> = ({ imageSrc, title, description, stack }) => {
   return (
     <Card className={styles.card}>
       <Image src={imageSrc} alt={`${title} Photo`} />
@@ -30,4 +30,4 @@ const Project: React.FC<ProjectProps> = ({ imageSrc, title, description, stack }
   );
 };
 
-export default Project;
+export default DesignProject;
