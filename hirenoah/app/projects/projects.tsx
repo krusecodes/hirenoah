@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from 'react';
 import { Space, Typography, Radio, RadioChangeEvent } from 'antd';
 
 import { engProjectData } from './engProjectData'
@@ -8,7 +9,6 @@ import Project from './project';
 import DesignProject from './designProject';
 
 import styles from "./project.module.css"
-import { useState } from 'react';
 
 const { Title } = Typography;
 
@@ -30,13 +30,13 @@ export default function Projects() {
 
   return (
     <>
-    <div className={styles.projectsHeader}>
-      <Title level={4} className={styles.projectTitle}>Featured Projects</Title>
-      <Radio.Group onChange={onChange} defaultValue="eng" buttonStyle="solid">
-      <Radio.Button value="eng">Engineering Projects</Radio.Button>
-      <Radio.Button value="design">Design Projects</Radio.Button>
-    </Radio.Group>
-    </div>
+      <div id="projectsSection" className={styles.projectsHeader}>
+        <Title level={4} className={styles.projectTitle}>Featured Projects</Title>
+        <Radio.Group onChange={onChange} defaultValue="eng" buttonStyle="solid">
+          <Radio.Button value="eng">Engineering Projects</Radio.Button>
+          <Radio.Button value="design">Design Projects</Radio.Button>
+        </Radio.Group>
+      </div>
       <Space direction="horizontal" wrap size="large" className={styles.cardSpace}>
         {displayEngProjects && (
           engProjectData.map((engProject: any) => (
@@ -45,7 +45,7 @@ export default function Projects() {
         )}
         {displayDesignProjects && (
           designProjectData.map((designProject: any) => (
-            <Project key={designProject.id} {...designProject} />
+            <DesignProject key={designProject.id} {...designProject} />
           ))
         )}
       </Space>

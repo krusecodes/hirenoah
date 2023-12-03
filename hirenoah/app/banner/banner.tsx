@@ -9,7 +9,7 @@ const { Title, Paragraph } = Typography;
 export default function Banner() {
   return (
     <>
-      <Paragraph className={styles.hello}>Hello, I{'`'}m</Paragraph>
+      <Paragraph className={styles.hello}>Hello, I{"'"}m</Paragraph>
       <Title className={styles.bannerTitle}>Noah Kruse</Title>
       <Paragraph className={styles.bannerParagraph}>
         I am deeply passionate about solving customer problems.
