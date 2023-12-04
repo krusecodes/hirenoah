@@ -7,12 +7,22 @@
 
 .card {
   width: 500px;
+  height: 608px;
   /* Add other styling for your card */
 }
 
-
+.image {
+  height: 337px !important;
+  object-fit: cover;
+}
 .projectTitle {
   margin-bottom: 52px !important;
+}
+
+.projectInfoContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .cardSpace {
@@ -30,6 +40,7 @@
 @media screen and (max-width: 720px) {
   .card {
     width: 300px;
+    height: 740px !important;
   }
   .projectsHeader {
     display: flex;

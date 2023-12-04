@@ -4,18 +4,18 @@ import { Typography } from 'antd';
 
 import styles from "./banner.module.css";
 
-const { Title, Paragraph } = Typography;
+const { Title, Paragraph, Text } = Typography;
 
 export default function Banner() {
   return (
     <>
-      <Paragraph className={styles.hello}>Hello, I{"'"}m</Paragraph>
-      <Title className={styles.bannerTitle}>Noah Kruse</Title>
+      <Paragraph className={styles.hello}>Hello there 👋. I really appreciate you stopping by.</Paragraph>
+      <Title className={styles.bannerTitle}>I{"'"}m Noah Kruse</Title>
       <Paragraph className={styles.bannerParagraph}>
-        I am deeply passionate about solving customer problems.
-        Rooted in my customer-facing experience, I have cultivated a profound empathy for users, shaping me into a feedback-centric engineer.
-        With every new process or feature, my objective is to meticulously measure its real impact and iterate for continuous improvement.
-        As a software engineer, my commitment is to ensure that everything I undertake is meticulously measured and consistently enhanced.
+        As a seasoned full-stack engineer with over 5 years of dedicated experience in the B2B software market, I am defined by my <Text className={styles.pUnderline}>user-centric approach</Text> and commitment to <Text className={styles.pUnderline}>feedback-driven development</Text>. I find immense satisfaction in the iterative process of building products, ensuring rapid progress and continuous improvement.
+        <br />
+        <br />
+        One of my key strengths lies in my proactive <Text className={styles.pUnderline}>engagement with customers</Text>, a practice that ensures a profound understanding of their challenges. Collaborating seamlessly with designers and product managers, I contribute to the refinement and finalization of project specifications. Central to my passion is the craft of writing code that not only meets but surpasses expectations, consistently delivering exceptional solutions.
       </Paragraph>
     </>
   )

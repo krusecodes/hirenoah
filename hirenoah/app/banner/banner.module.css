@@ -4,7 +4,19 @@
 
 .bannerTitle {
   margin-top: 16px !important;
+  text-decoration: underline;
+  text-decoration-color: #1677ff;
+  text-decoration-thickness: 0.2em;
+  text-underline-offset: 0.2em; /* Adjust offset to move it lower than the text */
 }
+
+.pUnderline {
+  text-decoration: underline;
+  text-decoration-color: #FFCC17;
+  text-decoration-thickness: 0.175em;
+  text-underline-offset: 0.175em; /* Adjust offset to move it lower than the text */
+}
+
 
 .bannerParagraph {
   margin-bottom: 184px !important;

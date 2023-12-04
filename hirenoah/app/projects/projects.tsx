@@ -32,10 +32,10 @@ export default function Projects() {
     <>
       <div id="projectsSection" className={styles.projectsHeader}>
         <Title level={4} className={styles.projectTitle}>Featured Projects</Title>
-        <Radio.Group onChange={onChange} defaultValue="eng" buttonStyle="solid">
+        {/* <Radio.Group onChange={onChange} defaultValue="eng" buttonStyle="solid">
           <Radio.Button value="eng">Engineering Projects</Radio.Button>
           <Radio.Button value="design">Design Projects</Radio.Button>
-        </Radio.Group>
+        </Radio.Group> */}
       </div>
       <Space direction="horizontal" wrap size="large" className={styles.cardSpace}>
         {displayEngProjects && (
