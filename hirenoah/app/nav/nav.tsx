@@ -28,7 +28,7 @@ export default function Nav() {
 
   return (
     <>
-      <Space className={styles.top} align="right" size="large">
+      <Space className={styles.top} align="start" size="large">
         <Text strong>NK.</Text>
         <Text onClick={scrollToProjects} style={{ cursor: 'pointer' }}>Projects</Text>
         <Text>

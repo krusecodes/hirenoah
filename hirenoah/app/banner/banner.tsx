@@ -10,7 +10,7 @@ export default function Banner() {
   return (
     <>
       <Paragraph className={styles.hello}>Hello there 👋. I really appreciate you stopping by.</Paragraph>
-      <Title className={styles.bannerTitle}>I{"'"}m Noah Kruse</Title>
+      <Title className={styles.bannerTitle}>I&apos;m Noah Kruse</Title>
       <Paragraph className={styles.bannerParagraph}>
         As a seasoned full-stack engineer with over 5 years of dedicated experience in the B2B software market, I am defined by my <Text className={styles.pUnderline}>user-centric approach</Text> and commitment to <Text className={styles.pUnderline}>feedback-driven development</Text>. I find immense satisfaction in the iterative process of building products, ensuring rapid progress and continuous improvement.
         <br />
