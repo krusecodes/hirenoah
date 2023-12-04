@@ -21,7 +21,6 @@ export default function Contact() {
       <Divider />
       <div className={styles.footerContainer}>
         <div className={styles.buttons}>
-          <Text strong>Contact</Text>
           <div className={styles.emailButtons}>
             <Button icon={<MailOutlined />} href="mailto:noah.kruse321@gmail.com" target="_blank" className={styles.button}>
               Send an Email
