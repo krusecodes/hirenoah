@@ -32,6 +32,7 @@
 @media screen and (max-width: 1200px) {
   .buttons {
     flex-direction: column; /* Stack items vertically */
+    gap: 16px;
     align-items: center; /* Center items horizontally */
   }
 

@@ -4,11 +4,14 @@
 
 .bannerTitle {
   margin-top: 16px !important;
-  text-decoration: underline;
+  /* text-decoration: underline;
   text-decoration-color: #1677ff;
   text-decoration-thickness: 0.2em;
-  text-underline-offset: 0.2em; /* Adjust offset to move it lower than the text */
+  text-underline-offset: 0.2em; */
+  color: #FFCC17 !important;
 }
+
+
 
 .pUnderline {
   text-decoration: underline;

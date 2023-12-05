@@ -15,8 +15,6 @@ export default function FeedbackCarousel() {
     color: "#fff",
     textAlign: "center",
     background: "#000",
-    marginLeft: "80px",
-    marginRight: "80px",
     paddingBottom: "48px"
   }
 
@@ -25,7 +23,7 @@ export default function FeedbackCarousel() {
       <Divider />
       <Title level={4} className={styles.projectTitle}>The Reviews</Title>
       <Card className={styles.carouselCard}>
-        <Carousel autoplay>
+        <Carousel>
           <div>
             <Paragraph style={contentStyle}>&quot;Noah started out at Aspire in a non-technical role and pursued his goals to become a software developer, successfully transitioning into an engineering role here. He is bright and learns quickly from a technical standpoint, but where he really impresses me is with his product engineering and leadership qualities. Noah cares about delivering great experiences to customers, engages with product managers and designers, and is proactive about making the team better. I highly recommend Noah for being an amazing teammate and person, and I&apos;m confident that he will make the culture of any team he joins better.&quot; -Suhaas Prasad, CTO & Cofounder at Aspire</Paragraph>
           </div>
