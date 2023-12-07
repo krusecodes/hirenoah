@@ -15,7 +15,7 @@ export default function FeedbackCarousel() {
     color: "#fff",
     textAlign: "center",
     background: "#000",
-    paddingBottom: "48px"
+    paddingBottom: "48px",
   }
 
   return (
