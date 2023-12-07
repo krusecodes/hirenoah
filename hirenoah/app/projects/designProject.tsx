@@ -19,9 +19,9 @@ const DesignProject: React.FC<DesignProjectProps> = ({ imageSrc, title, descript
     <Card className={styles.card}>
       <Image src={imageSrc} alt={`${title} Photo`} />
       <div className={styles.projectInfoContainer}>
-        <Paragraph strong>{title}</Paragraph>
-        <Paragraph>{description}</Paragraph>
-        <Paragraph>Stack: {stack}</Paragraph>
+        <h4>{title}</h4>
+        <p>{description}</p>
+        <p>Stack: {stack}</p>
         <Link href={projectLink} rel="noopener noreferrer" target="_blank">Figma</Link>
       </div>
     </Card>

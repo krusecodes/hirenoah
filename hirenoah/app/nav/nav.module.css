@@ -14,6 +14,21 @@
   margin-left: 32px;
 }
 
-.link {
-  color: black !important;
+.text {
+  color: #fff !important;
+}
+
+.textLink {
+  color: #fff !important;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 580px) {
+  .textLink {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
 }

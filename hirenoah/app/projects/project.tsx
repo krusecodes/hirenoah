@@ -21,12 +21,12 @@ const Project: React.FC<ProjectProps> = ({ imageSrc, title, description, stack, 
   return (
     <Card className={styles.card}>
       <Image src={imageSrc} className={styles.image} alt={`${title} Photo`} />
-      <div className={styles.projectInfoContainer}>
-        <Paragraph strong>{title}</Paragraph>
-        <Paragraph>{description}</Paragraph>
-        <Paragraph>Stack: {stack}</Paragraph>
-        <Link href={projectLink} rel="noopener noreferrer" target="_blank">Github</Link>
-      </div>
+        <div className={styles.projectInfoContainer}>
+          <h4>{title}</h4>
+          <p>{description}</p>
+          <p>Stack: {stack}</p>
+          <a href={projectLink} rel="noopener noreferrer" target="_blank">Github</a>
+        </div>
     </Card>
   );
 };

@@ -2,28 +2,93 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: #FFF;
-  --background-end-rgb: #FFF;
+h1 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-size: 60px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: #FFF;
-    --background-end-rgb: #FFF;
+@media screen and (max-width: 580px) {
+  h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
   }
 }
 
+h2 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 580px) {
+  h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+h3 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 580px) {
+  h3 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
+
+h4 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+p {
+  font-family: 'Roboto condensed', sans-serif;
+  /* Use 'sans-serif' as a fallback font */
+  font-size: 16px;
+}
+
+a {
+  font-family: 'Roboto condensed', sans-serif;
+  /* Use 'sans-serif' as a fallback font */
+  font-size: 16px;
+  color: #FE17FF;
+}
+
+a:hover {
+  color: #FFCC17;
+}
+
+:root {
+  --foreground-rgb: 255, 255, 255 !important;
+  /* White text color */
+  --background-start-rgb: 0, 0, 0 !important;
+  /* Black background start color */
+  --background-end-rgb: 0, 0, 0 !important;
+  /* Black background end color */
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 0, 0, 0 !important; 
+    --background-start-rgb: 255, 255, 255 !important;
+    --background-end-rgb: 255, 255, 255 !important;
+  }
+} */
+
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-    margin-left: 10%;
-    margin-right: 10%;
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  margin-left: 10%;
+  margin-right: 10%;
 }

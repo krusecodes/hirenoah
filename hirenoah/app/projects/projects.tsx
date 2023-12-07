@@ -31,7 +31,7 @@ export default function Projects() {
   return (
     <>
       <div id="projectsSection" className={styles.projectsHeader}>
-        <Title level={4} className={styles.projectTitle}>The Projects</Title>
+        <h3 className={styles.projectTitle}>The Projects</h3>
         {/* <Radio.Group onChange={onChange} defaultValue="eng" buttonStyle="solid">
           <Radio.Button value="eng">Engineering Projects</Radio.Button>
           <Radio.Button value="design">Design Projects</Radio.Button>

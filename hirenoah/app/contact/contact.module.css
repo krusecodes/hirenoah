@@ -18,9 +18,20 @@
   width: 240px;
 }
 
+.button:hover {
+  color: #FE17FF !important;
+  border-color: #FE17FF !important;
+}
+
 .clippyButton {
   width: 24px;
   margin-left: 4px;
+  background-color: #fff;
+}
+
+.clippyButton:hover {
+  color: #FE17FF !important;
+  border-color: #FE17FF !important;
 }
 
 .footerContainer {

@@ -29,21 +29,21 @@ export default function Nav() {
   return (
     <>
       <Space className={styles.top} align="start" size="large">
-        <Text strong>NK.</Text>
-        <Text onClick={scrollToProjects} style={{ cursor: 'pointer' }}>Projects</Text>
-        <Text>
+        <h2 className={styles.text}>NK.</h2>
+        <h2 className={styles.text} onClick={scrollToProjects} style={{ cursor: 'pointer' }}>Projects</h2>
+        <h2>
           <Link
-            className={styles.link}
+            className={styles.textLink}
             href="https://drive.google.com/file/d/1CmA03dq3_aidikKMIPWNHY1RSwP_CKyh/view?usp=sharing"
             rel="noreferrer noopener"
             target="_blank"
           >
             Resume
           </Link>
-        </Text>
-        <Text onClick={scrollToBottom} style={{ cursor: 'pointer' }}>
+        </h2>
+        <h2 className={styles.text} onClick={scrollToBottom} style={{ cursor: 'pointer' }}>
           Contact
-        </Text>
+        </h2>
       </Space>
     </>
   );

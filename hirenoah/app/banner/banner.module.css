@@ -1,5 +1,6 @@
 .hello {
   margin-top: 164px;
+  color: #fff !important;
 }
 
 .bannerTitle {
@@ -17,10 +18,46 @@
   text-decoration: underline;
   text-decoration-color: #FFCC17;
   text-decoration-thickness: 0.175em;
-  text-underline-offset: 0.175em; /* Adjust offset to move it lower than the text */
+  text-underline-offset: 0.25em;
+  /* Adjust offset to move it lower than the text */
+  color: #fff !important;
+  font-family: 'Roboto condensed', sans-serif; /* Use 'sans-serif' as a fallback font */
+  font-size: 16px;
 }
 
 
 .bannerParagraph {
   margin-bottom: 184px !important;
+  color: #fff !important;
 }
+
+.container {
+  margin-top: 80px;
+  margin-bottom: 164px;
+  position: relative;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    padding-top: 160px;
+    padding-bottom: 500px;
+  }
+}
+
+  .text {
+    position: absolute;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .ellipsis {
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+  }

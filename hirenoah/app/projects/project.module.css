@@ -7,8 +7,9 @@
 
 .card {
   width: 500px;
-  height: 608px;
-  /* Add other styling for your card */
+  height: 700px;
+  background-color: #F5F5F5;
+  display: flex;
 }
 
 .image {
@@ -17,16 +18,17 @@
 }
 .projectTitle {
   margin-bottom: 52px !important;
+  color: #fff !important;
 }
 
 .projectInfoContainer {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  gap: 8px;
 }
 
 .cardSpace {
-  /* This class needs to be applied to a flex container, not directly to a card */
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -37,21 +39,23 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1300px) {
+  .cardSpace {
+    /* This class needs to be applied to a flex container, not directly to a card */
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 720px) {
   .card {
     width: 300px;
-    height: 740px !important;
+    height: 748px !important;
   }
   .projectsHeader {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 40px;
-  }
-  .cardSpace {
-    /* This class needs to be applied to a flex container, not directly to a card */
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
   }
 }
